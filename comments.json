@@ -1,0 +1,251 @@
+[
+    {
+        "kind": "youtube#commentThread",
+        "etag": "bbSptUpHV_RlGUbQH3RIghMr7yw",
+        "id": "UgyIYr9WvKkofTNDFKp4AaABAg",
+        "snippet": {
+            "channelId": "UCB02prXAnQy08iwHgTTnJcA",
+            "videoId": "XB9mzX_j7B0",
+            "topLevelComment": {
+                "kind": "youtube#comment",
+                "etag": "IK0heIPAuvv4Ljx5PBjlLk_8UMk",
+                "id": "UgyIYr9WvKkofTNDFKp4AaABAg",
+                "snippet": {
+                    "channelId": "UCB02prXAnQy08iwHgTTnJcA",
+                    "videoId": "XB9mzX_j7B0",
+                    "textDisplay": "video uploaded for practising youtube api project<br>now it&#39;s updated",
+                    "textOriginal": "video uploaded for practising youtube api project\nnow it's updated",
+                    "authorDisplayName": "@mmudgal33",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_n0lGvvNS9W1DrJfJ3rgFiTJ8ysNZykvBZy0K35YmOs-uMf=s48-c-k-c0x00ffffff-no-rj",
+                    "authorChannelUrl": "http://www.youtube.com/@mmudgal33",
+                    "authorChannelId": {
+                        "value": "UCB02prXAnQy08iwHgTTnJcA"
+                    },
+                    "canRate": true,
+                    "viewerRating": "none",
+                    "likeCount": 1,
+                    "publishedAt": "2025-10-17T06:38:25Z",
+                    "updatedAt": "2025-10-18T16:49:01Z"
+                }
+            },
+            "canReply": true,
+            "totalReplyCount": 0,
+            "isPublic": true
+        }
+    },
+    {
+        "kind": "youtube#commentThread",
+        "etag": "NVO5ruOIqFYExNmOsSx1mnqJHQ4",
+        "id": "UgwDA43iz-VUAqstoqN4AaABAg",
+        "snippet": {
+            "channelId": "UCB02prXAnQy08iwHgTTnJcA",
+            "videoId": "XB9mzX_j7B0",
+            "topLevelComment": {
+                "kind": "youtube#comment",
+                "etag": "4TgTLRv7pkSUK6GgDl5LttzGI0A",
+                "id": "UgwDA43iz-VUAqstoqN4AaABAg",
+                "snippet": {
+                    "channelId": "UCB02prXAnQy08iwHgTTnJcA",
+                    "videoId": "XB9mzX_j7B0",
+                    "textDisplay": "trying to develop schema for logging",
+                    "textOriginal": "trying to develop schema for logging",
+                    "authorDisplayName": "@mmudgal33",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_n0lGvvNS9W1DrJfJ3rgFiTJ8ysNZykvBZy0K35YmOs-uMf=s48-c-k-c0x00ffffff-no-rj",
+                    "authorChannelUrl": "http://www.youtube.com/@mmudgal33",
+                    "authorChannelId": {
+                        "value": "UCB02prXAnQy08iwHgTTnJcA"
+                    },
+                    "canRate": true,
+                    "viewerRating": "none",
+                    "likeCount": 0,
+                    "publishedAt": "2025-10-19T11:54:54Z",
+                    "updatedAt": "2025-10-19T11:54:54Z"
+                }
+            },
+            "canReply": true,
+            "totalReplyCount": 0,
+            "isPublic": true
+        }
+    },
+    {
+        "kind": "youtube#commentThread",
+        "etag": "4VjVJh_kubf6Zq_mgYTMefxTTYo",
+        "id": "UgxQGGNm58dQKz9CYMt4AaABAg",
+        "snippet": {
+            "channelId": "UCB02prXAnQy08iwHgTTnJcA",
+            "videoId": "XB9mzX_j7B0",
+            "topLevelComment": {
+                "kind": "youtube#comment",
+                "etag": "ZwLHJ3t_9I7sH-VtL81mehznvQo",
+                "id": "UgxQGGNm58dQKz9CYMt4AaABAg",
+                "snippet": {
+                    "channelId": "UCB02prXAnQy08iwHgTTnJcA",
+                    "videoId": "XB9mzX_j7B0",
+                    "textDisplay": "API is authenticated, this comment is added for check",
+                    "textOriginal": "API is authenticated, this comment is added for check",
+                    "authorDisplayName": "@mmudgal33",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_n0lGvvNS9W1DrJfJ3rgFiTJ8ysNZykvBZy0K35YmOs-uMf=s48-c-k-c0x00ffffff-no-rj",
+                    "authorChannelUrl": "http://www.youtube.com/@mmudgal33",
+                    "authorChannelId": {
+                        "value": "UCB02prXAnQy08iwHgTTnJcA"
+                    },
+                    "canRate": true,
+                    "viewerRating": "none",
+                    "likeCount": 0,
+                    "publishedAt": "2025-10-18T16:40:36Z",
+                    "updatedAt": "2025-10-18T16:40:36Z"
+                }
+            },
+            "canReply": true,
+            "totalReplyCount": 1,
+            "isPublic": true
+        },
+        "replies": {
+            "comments": [
+                {
+                    "kind": "youtube#comment",
+                    "etag": "JV1goFr1M_C_H-u5eGNiS05_vCQ",
+                    "id": "UgxQGGNm58dQKz9CYMt4AaABAg.AOQnKUfQU2nAOQoyRXdlle",
+                    "snippet": {
+                        "channelId": "UCB02prXAnQy08iwHgTTnJcA",
+                        "videoId": "XB9mzX_j7B0",
+                        "textDisplay": "checking whether reply is seen in app",
+                        "textOriginal": "checking whether reply is seen in app",
+                        "parentId": "UgxQGGNm58dQKz9CYMt4AaABAg",
+                        "authorDisplayName": "@mmudgal33",
+                        "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_n0lGvvNS9W1DrJfJ3rgFiTJ8ysNZykvBZy0K35YmOs-uMf=s48-c-k-c0x00ffffff-no-rj",
+                        "authorChannelUrl": "http://www.youtube.com/@mmudgal33",
+                        "authorChannelId": {
+                            "value": "UCB02prXAnQy08iwHgTTnJcA"
+                        },
+                        "canRate": true,
+                        "viewerRating": "none",
+                        "likeCount": 0,
+                        "publishedAt": "2025-10-18T16:54:56Z",
+                        "updatedAt": "2025-10-18T16:54:56Z"
+                    }
+                }
+            ]
+        }
+    }
+]
+
+
+
+
+
+
+
+selectedVideo: {
+    "kind": "youtube#video",
+    "etag": "qwZUUih8VOTQTTLSx6RwiOFYd2o",
+    "id": "EuJK-zHRwrk",
+    "snippet": {
+        "publishedAt": "2023-12-02T14:17:24Z",
+        "channelId": "UCB02prXAnQy08iwHgTTnJcA",
+        "title": "AlmaBetter Frontend Project ResumeBuilderApp",
+        "description": "This video is related to resume building application. \nclient has normal state management in frontend side. React Components has bootstrap css for them. Main components are related to form of resume. userform component is main component inside app.js. \nbackend has middlewares for get request and save resume as pdf and sent back as response. render deployment server doesn't allow writing something,  but on local system, server auto download resume, constants.js can be changed to localhost/8000 to see it.\nDatabase not used.\ngithub link : https://github.com/mmudgal33/ResumeBuilderAppRender.git\nrender deploy link : \nhttps://resumebuilderapprender.onrender.com",
+        "thumbnails": {
+            "default": {
+                "url": "https://i.ytimg.com/vi/EuJK-zHRwrk/default.jpg",
+                "width": 120,
+                "height": 90
+            },
+            "medium": {
+                "url": "https://i.ytimg.com/vi/EuJK-zHRwrk/mqdefault.jpg",
+                "width": 320,
+                "height": 180
+            },
+            "high": {
+                "url": "https://i.ytimg.com/vi/EuJK-zHRwrk/hqdefault.jpg",
+                "width": 480,
+                "height": 360
+            },
+            "standard": {
+                "url": "https://i.ytimg.com/vi/EuJK-zHRwrk/sddefault.jpg",
+                "width": 640,
+                "height": 480
+            },
+            "maxres": {
+                "url": "https://i.ytimg.com/vi/EuJK-zHRwrk/maxresdefault.jpg",
+                "width": 1280,
+                "height": 720
+            }
+        },
+        "channelTitle": "Mohit Mudgal",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+            "title": "AlmaBetter Frontend Project ResumeBuilderApp",
+            "description": "This video is related to resume building application. \nclient has normal state management in frontend side. React Components has bootstrap css for them. Main components are related to form of resume. userform component is main component inside app.js. \nbackend has middlewares for get request and save resume as pdf and sent back as response. render deployment server doesn't allow writing something,  but on local system, server auto download resume, constants.js can be changed to localhost/8000 to see it.\nDatabase not used.\ngithub link : https://github.com/mmudgal33/ResumeBuilderAppRender.git\nrender deploy link : \nhttps://resumebuilderapprender.onrender.com"
+        },
+        "defaultAudioLanguage": "hi"
+    },
+    "statistics": {
+        "viewCount": "18",
+        "likeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+    }
+}
+
+
+
+
+
+
+
+selectedVideo: {
+    "kind": "youtube#video",
+    "etag": "_17lSM8mRUbLpIzU3szBe9lry2U",
+    "id": "XB9mzX_j7B0",
+    "snippet": {
+        "publishedAt": "2025-10-17T06:34:17Z",
+        "channelId": "UCB02prXAnQy08iwHgTTnJcA",
+        "title": "Rashmika Mandanna The new face of Laxmipati Sarees   Laxmipati Sarees",
+        "description": "Rashmika Mandanna The new face of Laxmipati Sarees   Laxmipati Sarees Sarees...",
+        "thumbnails": {
+            "default": {
+                "url": "https://i.ytimg.com/vi/XB9mzX_j7B0/default.jpg",
+                "width": 120,
+                "height": 90
+            },
+            "medium": {
+                "url": "https://i.ytimg.com/vi/XB9mzX_j7B0/mqdefault.jpg",
+                "width": 320,
+                "height": 180
+            },
+            "high": {
+                "url": "https://i.ytimg.com/vi/XB9mzX_j7B0/hqdefault.jpg",
+                "width": 480,
+                "height": 360
+            },
+            "standard": {
+                "url": "https://i.ytimg.com/vi/XB9mzX_j7B0/sddefault.jpg",
+                "width": 640,
+                "height": 480
+            },
+            "maxres": {
+                "url": "https://i.ytimg.com/vi/XB9mzX_j7B0/maxresdefault.jpg",
+                "width": 1280,
+                "height": 720
+            }
+        },
+        "channelTitle": "Mohit Mudgal",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+            "title": "Rashmika Mandanna The new face of Laxmipati Sarees   Laxmipati Sarees",
+            "description": "Rashmika Mandanna The new face of Laxmipati Sarees   Laxmipati Sarees Sarees..."
+        },
+        "defaultAudioLanguage": "en-US"
+    },
+    "statistics": {
+        "viewCount": "10",
+        "likeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "4"
+    }
+}
