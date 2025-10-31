@@ -35,6 +35,8 @@ function AppD2() {
   const [anchorEl, setAnchorEl] = useState(null);
   const [description, setDescription] = useState({});
 
+  // var cauthUrl = '';
+
   // const [currentTab, setCurrentTab] = useState(0);
 
   console.log('isAuthenticated ', isAuthenticated);
@@ -69,9 +71,11 @@ function AppD2() {
   // running
   const handleLogin = () => {
     const authUrl = YouTubeAuthService.getAuthUrl();
+    // cauthUrl = authUrl;
     window.location.href = authUrl;
-    console.log('authUrl ', authUrl);
   };
+
+  // console.log('authUrl ', cauthUrl);
 
 
   useEffect(() => {

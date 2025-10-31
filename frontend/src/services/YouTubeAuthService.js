@@ -10,6 +10,7 @@ class YouTubeAuthService {
       // this.REDIRECT_URI = process.env.REACT_APP_GOOGLE_REDIRECT_URI || 'http://localhost:3000/oauth2callback';
       this.CLIENT_ID = REACT_APP_GOOGLE_CLIENT_ID;
       this.REDIRECT_URI = REACT_APP_GOOGLE_REDIRECT_URI || 'http://localhost:5173/oauth2callback';
+      
       this.SCOPES = [
         'https://www.googleapis.com/auth/youtube.force-ssl',
         'https://www.googleapis.com/auth/youtube.readonly',
@@ -19,22 +20,46 @@ class YouTubeAuthService {
       ].join(' ');
     }
   
-    // Generate the OAuth 2.0 URL
-    getAuthUrl() {
-      const params = new URLSearchParams({
-        client_id: this.CLIENT_ID,
-        redirect_uri: this.REDIRECT_URI,
-        response_type: 'code',
-        scope: this.SCOPES,
-        access_type: 'offline',
-        prompt: 'consent',
-      });
+    // // Generate the OAuth 2.0 URL
+    // getAuthUrl() {
+    //   const params = new URLSearchParams({
+    //     client_id: this.CLIENT_ID,
+    //     redirect_uri: this.REDIRECT_URI,
+    //     response_type: 'code',
+    //     scope: this.SCOPES,
+    //     access_type: 'offline',
+    //     prompt: 'consent',
+    //   });
 
 
-      console.log('inside getAuthUrl()')
+    //   console.log('inside getAuthUrl()')
   
-      return `https://accounts.google.com/o/oauth2/v2/auth?${params.toString()}`;
+    //   return `https://accounts.google.com/o/oauth2/v2/auth?${params.toString()}`;
+    // }
+
+
+    getAuthUrl() {
+      // Use environment variable with fallback for development
+      const clientId = this.CLIENT_ID || 'your-client-id';
+      
+      // Dynamically determine redirect URI based on environment
+      // const redirectUri = window.location.origin + '/oauth2callback';
+      const redirectUri = window.location.origin + '/google/callback';
+      
+      const scopes = this.SCOPES;
+  
+      const authUrl = new URL('https://accounts.google.com/o/oauth2/v2/auth');
+      authUrl.searchParams.set('client_id', clientId);
+      authUrl.searchParams.set('redirect_uri', redirectUri);
+      authUrl.searchParams.set('response_type', 'code');
+      authUrl.searchParams.set('scope', scopes);
+      authUrl.searchParams.set('access_type', 'offline');
+      authUrl.searchParams.set('prompt', 'consent'); // Important: ensures refresh token
+  
+      return authUrl.toString();
     }
+
+
   
     // Exchange authorization code for access token
     async exchangeCodeForToken(authorizationCode) {
