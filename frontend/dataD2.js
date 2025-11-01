@@ -14,6 +14,7 @@ const production = {
   const development = {
     url: 'http://localhost:5173',
     api: 'http://localhost:8080'
+    // api: 'https://googleauthenticationwithreactnode.onrender.com'
   };
 export const config = process.env.NODE_ENV === 'development' ? development : production;
 

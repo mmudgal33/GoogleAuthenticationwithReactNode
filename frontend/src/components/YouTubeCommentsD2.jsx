@@ -211,6 +211,7 @@ const YouTubeCommentsD2 = ({ videoId, isAuthenticated, onAuthRequired, descripti
 
         try {
             const commentId = editingComment.snippet.topLevelComment.id
+            const textOriginal = editingComment.snippet.topLevelComment.snippet.textOriginal
             const res = await fetch(`${api}/comment`, {
                 headers: {
                     'Content-Type': 'application/json',
@@ -223,6 +224,7 @@ const YouTubeCommentsD2 = ({ videoId, isAuthenticated, onAuthRequired, descripti
                         videoId,
                         commentId,
                         editText,
+                        textOriginal,
                     },
                     comments,
                 })

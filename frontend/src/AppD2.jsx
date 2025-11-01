@@ -172,7 +172,7 @@ function AppD2() {
         <Container maxWidth="lg" sx={{ mt: 4 }}>
           <Routes>
             {/* <Route path="/oauth2callback" element={<OAuthCallbackD2 />} />  */}
-            <Route path="/google/callback" element={<OAuthCallbackD2 />} />
+            <Route path="/oauth2callback" element={<OAuthCallbackD2 />} />
             <Route path="/" element={
               <>
                 

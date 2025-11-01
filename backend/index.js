@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true })); // for parsing application/x-ww
 
 
 app.use(cors());
-app.use('/auth/', authRoutes); // <- NEW LINE
+// app.use('/auth/', authRoutes); // <- NEW LINE
 app.use('/comment', commentController)
 app.use('/description', descriptionController)
 
