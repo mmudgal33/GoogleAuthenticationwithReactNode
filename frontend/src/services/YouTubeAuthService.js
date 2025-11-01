@@ -45,7 +45,7 @@ class YouTubeAuthService {
       
       // Dynamically determine redirect URI based on environment
       // const redirectUri = window.location.origin + '/oauth2callback';
-      const redirectUri = window.location.origin + '/oauth2callback';
+      const redirectUri = this.REDIRECT_URI;
       
       const scopes = this.SCOPES;
   
@@ -56,7 +56,8 @@ class YouTubeAuthService {
       authUrl.searchParams.set('scope', scopes);
       authUrl.searchParams.set('access_type', 'offline');
       authUrl.searchParams.set('prompt', 'consent'); // Important: ensures refresh token
-  
+
+      console.log('🔐 Full Auth URL:', authUrl.toString()); // Debug log
       return authUrl.toString();
     }
 

@@ -26,6 +26,8 @@ import YouTubeApiService from './services/youtubeApiD2';
 import getDescription from './services/getDescription';
 import YouTubeVideoTitle from './components/YouTubeVideoTitle';
 
+import RouteDebugger from './components/RouteDebugger';
+
 
 function AppD2() {
   const [videoId, setVideoId] = useState('');
@@ -172,6 +174,7 @@ function AppD2() {
         <Container maxWidth="lg" sx={{ mt: 4 }}>
           <Routes>
             <Route path="/oauth2callback" element={<OAuthCallbackD2 />} /> 
+            <Route path="/debug-routes" element={<RouteDebugger />} />
             {/* <Route path="/google/callback" element={<OAuthCallbackD2 />} /> */}
             <Route path="/" element={
               <>
