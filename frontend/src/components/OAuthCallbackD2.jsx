@@ -17,6 +17,8 @@ const OAuthCallbackD2 = () => {
         const authorizationCode = urlParams.get('code');
         const error = urlParams.get('error');
 
+        console.log('inside OAuthCallbackD2')
+
         if (error) {
           setStatus('error');
           setError(`Authorization failed: ${error}`);
@@ -36,7 +38,7 @@ const OAuthCallbackD2 = () => {
         // Redirect to main page after a short delay
         setTimeout(() => {
           navigate('/');
-        }, 2000);
+        }, 5000);
 
       } catch (error) {
         console.error('OAuth callback error:', error);
