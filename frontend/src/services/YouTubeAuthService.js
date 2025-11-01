@@ -9,7 +9,8 @@ class YouTubeAuthService {
       // this.CLIENT_ID = process.env.REACT_APP_GOOGLE_CLIENT_ID;
       // this.REDIRECT_URI = process.env.REACT_APP_GOOGLE_REDIRECT_URI || 'http://localhost:3000/oauth2callback';
       this.CLIENT_ID = REACT_APP_GOOGLE_CLIENT_ID;
-      this.REDIRECT_URI = REACT_APP_GOOGLE_REDIRECT_URI || 'http://localhost:5173/oauth2callback';
+      // this.REDIRECT_URI = REACT_APP_GOOGLE_REDIRECT_URI || 'http://localhost:5173/oauth2callback';
+      this.REDIRECT_URI = window.location.origin + '/google/callback'
       
       this.SCOPES = [
         'https://www.googleapis.com/auth/youtube.force-ssl',

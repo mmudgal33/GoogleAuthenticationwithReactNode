@@ -17,7 +17,7 @@ import {
   Tab,
 } from '@mui/material';
 import { AccountCircle } from '@mui/icons-material';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, useNavigate } from 'react-router-dom';
 import YouTubeCommentsD2 from './components/YouTubeCommentsD2';
 import OAuthCallbackD2 from './components/OAuthCallbackD2';
 import YouTubeAuthService from './services/YouTubeAuthService';
@@ -34,6 +34,8 @@ function AppD2() {
   const [userProfile, setUserProfile] = useState(null);
   const [anchorEl, setAnchorEl] = useState(null);
   const [description, setDescription] = useState({});
+
+  // const navigate = useNavigate();
 
   // var cauthUrl = '';
 
@@ -73,6 +75,7 @@ function AppD2() {
     const authUrl = YouTubeAuthService.getAuthUrl();
     // cauthUrl = authUrl;
     window.location.href = authUrl;
+    // navigate("/google/callback");
   };
 
   // console.log('authUrl ', cauthUrl);
@@ -89,7 +92,6 @@ function AppD2() {
     const description = await getDescription.fetchVideoData();
     // const description = await YouTubeApiService.getVideoDetails(videoId);
 
-    
     console.log('description ', description);
     setDescription(description);
   };
