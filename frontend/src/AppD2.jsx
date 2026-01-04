@@ -20,6 +20,8 @@ import { AccountCircle } from '@mui/icons-material';
 import { BrowserRouter as Router, Routes, Route, Navigate, useNavigate } from 'react-router-dom';
 import YouTubeCommentsD2 from './components/YouTubeCommentsD2';
 import OAuthCallbackD2 from './components/OAuthCallbackD2';
+import PrivacyPolicy from './components/PrivacyPolicy';
+
 import YouTubeAuthService from './services/YouTubeAuthService';
 import YouTubeApiService from './services/youtubeApiD2';
 
@@ -173,6 +175,7 @@ function AppD2() {
           <Routes>
             {/* <Route path="/oauth2callback" element={<OAuthCallbackD2 />} />  */}
             <Route path="/oauth2callback" element={<OAuthCallbackD2 />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/" element={
               <>
                 
@@ -184,6 +187,7 @@ function AppD2() {
                     </Typography>
                     <Typography variant="body1" sx={{ mb: 2 }}>
                       To post, edit, or delete comments, you need to authenticate with your Google account.
+                      <PrivacyPolicy />
                     </Typography>
                     <Button variant="contained" onClick={handleLogin}>
                       Login with Google
