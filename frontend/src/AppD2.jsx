@@ -80,7 +80,13 @@ function AppD2() {
     // navigate("/google/callback");
   };
 
-  // console.log('authUrl ', cauthUrl);
+  // console.log('authUrl ', authUrl);
+
+
+  
+  // const handlePrivacyPolicy = () => {
+  //   navigate("/privacy");
+  // };
 
 
   useEffect(() => {
@@ -131,7 +137,7 @@ function AppD2() {
         <AppBar position="static">
           <Toolbar>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              YouTube Comments Manager
+              Mudgal's Comments Manager &nbsp;
             </Typography>
 
             {isAuthenticated ? (
@@ -175,7 +181,7 @@ function AppD2() {
           <Routes>
             {/* <Route path="/oauth2callback" element={<OAuthCallbackD2 />} />  */}
             <Route path="/oauth2callback" element={<OAuthCallbackD2 />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/" element={
               <>
                 
@@ -189,9 +195,17 @@ function AppD2() {
                       To post, edit, or delete comments, you need to authenticate with your Google account.
                       <PrivacyPolicy />
                     </Typography>
+                    
                     <Button variant="contained" onClick={handleLogin}>
                       Login with Google
                     </Button>
+                    &nbsp;
+                    {/* <a href="https://googleauthenticationwithreactnodef.onrender.com/privacy-policy" target="_blank">Privacy Policy</a> */}
+                    
+                    
+                    {/* <Button variant="contained" onClick={handlePrivacyPolicy}>
+                      Privacy Policy
+                    </Button> */}
                   </Paper>
                 )}
 
