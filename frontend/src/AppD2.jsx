@@ -17,7 +17,7 @@ import {
   Tab,
 } from '@mui/material';
 import { AccountCircle } from '@mui/icons-material';
-import { BrowserRouter as Router, Routes, Route, Navigate, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, useNavigate, Link} from 'react-router-dom';
 import YouTubeCommentsD2 from './components/YouTubeCommentsD2';
 import OAuthCallbackD2 from './components/OAuthCallbackD2';
 import PrivacyPolicy from './components/PrivacyPolicy';
@@ -137,7 +137,8 @@ function AppD2() {
         <AppBar position="static">
           <Toolbar>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              Mudgal's Comments Manager &nbsp;
+              Mudgal's Comments Manager &nbsp; 
+              <sup > <Link to='/privacy' style={{ color: 'white', fontSize: '10px', fontWeight:'bold' }}> Privacy Policy </Link> </sup>
             </Typography>
 
             {isAuthenticated ? (
@@ -193,15 +194,13 @@ function AppD2() {
                     </Typography>
                     <Typography variant="body1" sx={{ mb: 2 }}>
                       To post, edit, or delete comments, you need to authenticate with your Google account.
-                      <PrivacyPolicy />
+                      {/* <PrivacyPolicy /> */}
                     </Typography>
                     
                     <Button variant="contained" onClick={handleLogin}>
                       Login with Google
                     </Button>
                     &nbsp;
-                    {/* <a href="https://googleauthenticationwithreactnodef.onrender.com/privacy-policy" target="_blank">Privacy Policy</a> */}
-                    
                     
                     {/* <Button variant="contained" onClick={handlePrivacyPolicy}>
                       Privacy Policy

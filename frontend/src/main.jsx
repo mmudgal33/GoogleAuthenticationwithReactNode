@@ -7,12 +7,14 @@ import './index.css'
 
 
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   // <React.StrictMode>
   //   <App />
   // </React.StrictMode>,
 
   // <App />,
-  <AppD2 />,
+    <AppD2 />
+  ,
 
 )

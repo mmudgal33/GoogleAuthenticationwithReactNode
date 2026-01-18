@@ -1,7 +1,7 @@
 export default function PrivacyPolicy() {
 
     return (
-        <>
+        <div style={{backgroundColor: 'warning.light'}}>
             <h3>YouTube API Services Related Privacy Policy</h3>
             <p>Our app uses YouTube API Services to enable video sharing
                 and playback. By using our app, you agree to be bound by the
@@ -16,6 +16,6 @@ export default function PrivacyPolicy() {
                 Google's security settings page:
                 <a href="https://security.google.com/settings/security/permissions">
                     https://security.google.com/settings/security/permissions</a></p>
-        </>
+        </div>
     );
 }
