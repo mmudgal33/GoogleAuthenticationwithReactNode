@@ -412,7 +412,7 @@ const YouTubeVideoTitle = ({ isAuthenticated, onAuthRequired }) => {
           {selectedVideo && (
             <>
               <Typography variant="subtitle2" gutterBottom>
-                Editing description for: {selectedVideo.snippet.title}
+                Editing description and title for: {selectedVideo.snippet.title}
               </Typography>
               <TextField
                 multiline
